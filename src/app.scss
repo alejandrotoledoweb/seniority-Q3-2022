@@ -2,6 +2,7 @@
   max-width: 1024px;
   margin: auto;
   position: relative;
+  justify-content: center;
 
   &__title {
     color: var(--black-color);
@@ -10,7 +11,8 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 70px;
+    justify-content: center;
   }
 
   &__form-player {
