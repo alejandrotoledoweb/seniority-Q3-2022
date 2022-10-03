@@ -17,7 +17,11 @@ export const PlayerCard: React.FC<CardPlayerProps> = ({ player, onDelete }) => {
   return (
     <div className="playercard-container">
       <div className="playercard-container__image-container">
-        <img src={imageDefault} alt="" className="playercard-container__image" />
+        <img
+          src={imageDefault}
+          alt={`${player.firstName} image`}
+          className="playercard-container__image"
+        />
         <div className="playercard-container__image-container-text">{completeName}</div>
       </div>
       <div className="playercard-container__text">

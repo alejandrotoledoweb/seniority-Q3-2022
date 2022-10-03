@@ -52,13 +52,13 @@ export const FormPlayer: React.FC<ModalProps> = ({ handleCloseModal, handleAddNe
                   </div>
                   <div>
                     <p>Apellido</p>
-                    <Input onChange={handleInfo('firstName')} placeholder="apellido" />
+                    <Input onChange={handleInfo('lastName')} placeholder="apellido" />
                   </div>
                 </div>
                 <div className="form-container-section1">
                   <div>
                     <p>Imagen</p>
-                    <Input onChange={handleInfo('firstName')} placeholder="imagen" />
+                    <Input onChange={handleInfo('image')} placeholder="imagen" />
                   </div>
                   <div>
                     <p>Posición</p>
