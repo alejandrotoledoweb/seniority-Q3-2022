@@ -9,9 +9,11 @@ import { PlayerCard } from './components/organisms/playerCard/playerCard'
 import store, { IPlayer } from './store/store'
 import { observer } from 'mobx-react'
 import { FormPlayer } from './components/organisms/formPlayer/formPlayer'
+import { Modal } from './components/atoms/modal/Modal'
 
 const App = observer(() => {
   const [openNew, setOpenNew] = useState(false)
+  // const [openNew2, setOpenNew2] = useState(false)
   useEffect(() => {
     store.getAllPlayers()
   }, [])
@@ -32,6 +34,9 @@ const App = observer(() => {
   const onHandleCloseModal = () => {
     setOpenNew(false)
   }
+  // const onHandleCloseModal2 = () => {
+  //   setOpenNew2(false)
+  // }
 
   const handleCreateNew = (player: IPlayer) => {
     store.postPlayer(player)
@@ -39,6 +44,7 @@ const App = observer(() => {
   }
   return (
     <div className="app">
+      {/* {openNew2 && <Modal handleCloseModal={onHandleCloseModal2}>Modal Example</Modal>} */}
       {openNew && (
         <FormPlayer handleCloseModal={onHandleCloseModal} handleAddNew={handleCreateNew} nuevo />
       )}

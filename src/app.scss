@@ -9,9 +9,10 @@
   }
 
   &__cards {
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 70px;
+    grid-gap: 60px;
     justify-content: center;
   }
 

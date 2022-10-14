@@ -36,7 +36,12 @@ export const FormPlayer: React.FC<ModalProps> = ({ handleCloseModal, handleAddNe
       <div className="modal-content">
         <div className="modal-header">
           <h4 className="modal-title">Agregar Jugador</h4>
-          <img src={CloseIcon} alt="modal-button" onClick={handleCloseModal} />
+          <img
+            src={CloseIcon}
+            className="modal-button-close"
+            alt="modal-button"
+            onClick={handleCloseModal}
+          />
         </div>
         <div className="modal-body">
           <section className="form-container">

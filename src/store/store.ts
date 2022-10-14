@@ -1,5 +1,5 @@
 import { makeAutoObservable, runInAction } from 'mobx'
-import { deletePlayer, getPlayers, postPlayer, updatePlayer } from './../services/user.service'
+import { deletePlayer, getPlayers, postPlayer, updatePlayer } from '../services/user.service'
 
 export interface IPlayer {
   id?: number
